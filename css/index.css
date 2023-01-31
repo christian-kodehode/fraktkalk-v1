@@ -1,0 +1,234 @@
+/* --------------------------------------------
+-------- ASPECT RATIO - ( 1:1 to 8:3 ) --------
+----- MOST MOBILE PHONES / TIPPED SCREENS -----
+---------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: var(--col-backg);
+  color: var(--col-black);
+  width: 100vw;
+}
+
+/* ------------------
+** --- SECTIONS -----
+-------------------*/
+
+#secHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: var(--sec-h-head);
+  width: var(--set-w-max);
+}
+
+#secForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: var(--sec-h-form);
+  width: var(--set-w-max);
+}
+
+#secFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: var(--sec-h-foot);
+  width: var(--set-w-max);
+  font-size: var(--fs-xs);
+}
+
+/* -------------------------
+------ HEADER SECTION ------
+------------------------- */
+
+h1 {
+  margin: var(--mv-none);
+  padding: var(--p-none);
+  font-size: var(--fs-xl);
+}
+
+/* ----------------------
+------ FORM SECTION -----
+-----------------------*/
+
+/* ---------------------
+------ INPUT FORM ------
+--------------------- */
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: var(--set-w-s);
+  height: var(--set-w-max);
+}
+
+.header2 {
+  font-size: var(--fs-l);
+  width: var(--set-w-l);
+  text-align: center;
+  color: var(--col-black);
+  margin: var(--mv-none);
+  padding: var(--p-none);
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  width: var(--set-w-l);
+}
+
+.inputPairs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inputForm_label {
+  margin-top: var(--mv-m);
+  font-size: var(--fs-m);
+  color: var(--col-mblue);
+  font-weight: var(--fw-bold);
+}
+
+.inputForm_input {
+  margin-top: var(--mv-xs);
+  padding: var(--p-m);
+  border: var(--border-t) solid var(--col-black);
+  border-radius: var(--border-r);
+  font-size: var(--fs-m);
+  width: clamp(var(--set-w-min), var(--set-w-l), var(--set-w-max));
+  background-color: var(--col-white);
+}
+
+#inputForm_submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: var(--mv-l);
+  padding: var(--p-m);
+  border: var(--border-t) solid var(--col-black);
+  border-radius: var(--border-r2);
+  font-size: var(--fs-s);
+  width: clamp(var(--set-w-min), var(--set-w-m), var(--set-w-l));
+  color: var(--col-black);
+  background-color: var(--col-lgray);
+  align-self: center;
+}
+
+#inputForm_submit:hover {
+  cursor: pointer;
+  background-color: var(--col-mgray);
+}
+
+/* ----------------------
+** --- OUTPUT AREA ------
+---------------------- */
+
+#outputArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: var(--set-w-s);
+}
+
+/* --- BEFORE CALCULATION --- */
+
+.header3 {
+  text-align: center;
+  font-size: var(--fs-l);
+  width: var(--set-w-l);
+  color: var(--col-black);
+  margin: var(--mv-xl) 0 0 0;
+  padding: var(--p-none);
+}
+
+/* --- AFTER CALCULATION --- */
+
+/* ERRORS */
+
+.errorHeader {
+  font-size: var(--fs-l);
+  margin: 0 0 var(--mv-xl) 0;
+}
+
+.errorMessage {
+  font-size: var(--fs-m);
+  margin: var(--mv-s) 0;
+}
+
+.errorHeader,
+.errorMessage {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  width: var(--set-w-max);
+  padding: var(--p-none);
+  color: var(--col-erred);
+}
+
+/* RESULTS ACCEPTED */
+
+.outputForm {
+  display: flex;
+  flex-direction: column;
+  padding: var(--p-none);
+  width: var(--set-w-l);
+  color: var(--col-black);
+}
+
+.outputPair {
+  display: flex;
+  flex-direction: column;
+}
+
+.resultLabel {
+  margin-top: var(--mv-m);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-bold);
+}
+
+.resultValue {
+  margin-top: var(--mv-xs);
+  padding: var(--p-m);
+  border: var(--border-t) solid var(--col-black);
+  font-size: var(--fs-m);
+  width: clamp(var(--set-w-min), var(--set-w-l), var(--set-w-max));
+  background-color: var(--col-lgray);
+}
+
+/* -------------------------
+------ FOOTER SECTION ------
+----------------------------
+--------------------------*/
+
+#core {
+  color: var(--col-erred);
+  padding-left: var(--p-m);
+  margin-left: var(--mv-xs);
+}
+
+#trek {
+  color: var(--col-mgold);
+  padding-right: var(--p-m);
+  margin-right: var(--mv-xs);
+}
+
+#core,
+#trek {
+  background-color: var(--col-black);
+  padding-top: var(--mv-xs);
+  padding-bottom: var(--mv-xs);
+  font-weight: var(--fw-bold);
+}

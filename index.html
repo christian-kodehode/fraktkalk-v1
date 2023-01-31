@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Program that calculates freight prices based on some input values"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/palette.css" />
+    <link rel="stylesheet" href="./css/sizes.css" />
+    <link rel="stylesheet" href="./css/mq-mobile.css" />
+    <link rel="stylesheet" href="./css/mq-mobileTall.css" />
+    <link rel="stylesheet" href="./css/mq-widescreen.css" />
+    <script src="./node_modules/axios/dist/axios.min.js" defer></script>
+    <script src="./js/FreightCalculator.js" defer></script>
+    <title>Frakt-kalkulator - v1.0</title>
+  </head>
+  <body>
+    <section id="secHeader">
+      <h1>Frakt-kalkulator</h1>
+    </section>
+    <section id="secForm">
+      <div class="inputDiv">
+        <h2 class="header2">Fyll ut</h2>
+        <form class="inputForm">
+          <div class="inputPairs">
+            <label class="inputForm_label" for="inputPostcode">Postnummer:</label>
+            <input class="inputForm_input" id="inputPostcode" type="number" />
+          </div>
+          <div class="inputPairs">
+            <label class="inputForm_label" for="inputWeight">Vekt:</label>
+            <input class="inputForm_input" id="inputWeight" type="number" />
+          </div>
+
+          <div class="inputPairs">
+            <label class="inputForm_label" for="inputLoadingMeter">Lastemeter:</label>
+            <input class="inputForm_input" id="inputLoadingMeter" type="number" />
+          </div>
+          <div id="inputForm_submit" onclick="runCalc()">Regn ut pris</div>
+        </form>
+      </div>
+      <div id="outputArea">
+        <div class="requirementsDiv">
+          <h2 class="header3">Postnummer må fylles ut.</h2>
+          <h2 class="header3">Vekt og/eller lastemeter må fylles ut.</h2>
+        </div>
+      </div>
+    </section>
+    <section id="secFooter">
+      Powered by <span id="core">Core</span><span id="trek">Trek</span> (C) 2023
+    </section>
+  </body>
+</html>

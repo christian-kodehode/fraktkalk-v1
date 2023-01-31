@@ -1,0 +1,30 @@
+/* ------------------------------------------
+------- ASPECT RATIO - ( 2.67:1 to 1:1 ) -------
+------------- EXTRA WIDE SCREENS ------------ 
+---------- ( USEABLE UP TO 4.5:1 ) ---------
+-------------------------------------------*/
+
+@media screen and (min-aspect-ratio: 8/3) {
+  :root {
+    /* --- FONT-SIZES --- */
+    --fs-xs: 0.5vw;
+    --fs-s: 1vw;
+    --fs-m: 1.5vw;
+    --fs-l: 2vw;
+    --fs-xl: 3vw;
+  }
+  .inputPairs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .inputForm_input {
+    width: clamp(var(--set-w-min), var(--set-w-m), var(--set-w-l));
+  }
+  .outputPair {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .resultValue {
+    width: clamp(var(--set-w-min), var(--set-w-m), var(--set-w-l));
+  }
+}

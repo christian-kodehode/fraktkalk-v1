@@ -1,0 +1,43 @@
+/* ----------------------
+----- DEFAULT SIZES -----
+-----------------------*/
+
+:root {
+  /* --- SECTION HEIGTHS --- */
+  --sec-h-head: 25vh;
+  --sec-h-form: 65vh;
+  --sec-h-foot: 10vh;
+
+  /* --- ELEMENT SIZES --- */
+  --set-w-s: 35%;
+  --set-w-m: 60%;
+  --set-w-l: 85%;
+  --set-w-max: 100%;
+  --set-w-min: 100px;
+
+  /* --- BORDER THICKNESS & RADIUS --- */
+  --border-t: 0.3vw;
+  --border-r: 0.3rem;
+  --border-r2: 0.5rem;
+
+  /* --- FONT-SIZES --- */
+  --fs-xs: 2.5vh;
+  --fs-s: 3vh;
+  --fs-m: 3.5vh;
+  --fs-l: 4vh;
+  --fs-xl: 7.5vh;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  /* --- MARGIN - VERTICAL --- */
+  --mv-none: 0;
+  --mv-xs: 0.5vh;
+  --mv-s: 2vh;
+  --mv-m: 3vh;
+  --mv-l: 4vh;
+  --mv-xl: 6vh;
+
+  /* --- PADDING --- */
+  --p-none: 0;
+  --p-m: 0.5vmax;
+}

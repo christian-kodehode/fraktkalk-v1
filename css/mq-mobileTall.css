@@ -1,0 +1,32 @@
+/* ------------------------------------------
+------- ASPECT RATIO - ( 1:2 to 1:~ ) -------
+------------- EXTRA TALL SCREENS ------------ 
+--------- ( USEABLE DOWN TO 1:3.5 ) ---------
+-------------------------------------------*/
+
+@media screen and (max-aspect-ratio: 1/2) {
+  :root {
+    /* --- FONT-SIZES --- */
+    --fs-xs: 1vh;
+    --fs-s: 1.5vh;
+    --fs-m: 2vh;
+    --fs-l: 3vh;
+    --fs-xl: 4vh;
+    --fw-normal: 400;
+    --fw-bold: 700;
+  }
+  .header2 {
+    margin-bottom: var(--mv-m);
+  }
+  .inputPairs {
+    flex-direction: column;
+    margin: var(--mv-xs) 0;
+  }
+  .inputForm_label {
+    margin-bottom: var(--mv-xs);
+  }
+  .outputPair {
+    flex-direction: column;
+    margin-top: var(--mv-xs) 0;
+  }
+}

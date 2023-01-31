@@ -1,0 +1,107 @@
+/* --------------------------------------------
+-------- ASPECT RATIO - ( 1:1 to 1:2 ) --------
+----- MOST MOBILE PHONES / TIPPED SCREENS -----
+---------------------------------------------*/
+
+@media screen and (max-aspect-ratio: 1/1) {
+  :root {
+    /* --- SECTION HEIGTHS --- */
+    --sec-h-head: 10vh;
+    --sec-h-form: 80vh;
+    --sec-h-foot: 5vh;
+
+    /* --- ELEMENT SIZES --- */
+    --set-w-xs: 30%;
+    --set-w-s: 40%;
+    --set-w-m: 60%;
+    --set-w-l: 90%;
+
+    --set-h-m: 50%;
+
+    /* --- FONT-SIZES --- */
+    --fs-xs: 1.5vh;
+    --fs-s: 2vh;
+    --fs-m: 3vh;
+    --fs-l: 4vh;
+    --fs-xl: 6vh;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    /* --- MARGIN - VERTICAL --- */
+    --mv-none: 0;
+    --mv-s: 1vh;
+    --mv-m: 2vh;
+    --mv-l: 3vh;
+    --mv-xl: 4vh;
+    --mv-2xl: 5vh;
+    --mv-3xl: 6vh;
+  }
+
+  /* --- SECTIONS --- */
+
+  #secHeader {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #secForm {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* --- INPUT --- */
+
+  .inputDiv {
+    align-items: center;
+    width: var(--set-w-l);
+    height: var(--set-h-m);
+  }
+  .header2 {
+    margin: var(--mv-xl) 0 0 0;
+  }
+  .inputPairs {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--mv-l);
+  }
+  .inputForm_label {
+    margin: var(--mv-none);
+  }
+  .inputForm_input {
+    margin: var(--mv-none);
+    width: var(--set-w-xs);
+  }
+  #inputForm_submit {
+    margin-top: var(--mv-xl);
+    padding: var(--mv-xs) var(--mv-s);
+  }
+
+  /* --- RESULTS --- */
+
+  #outputArea {
+    width: var(--set-w-l);
+    height: var(--set-h-m);
+  }
+  .header3 {
+    margin: var(--mv-3xl) 0 0 0;
+  }
+  .errorHeader {
+    margin: var(--mv-2xl) 0 0 0;
+  }
+  .errorMessage {
+    margin: var(--mv-l) 0 0 0;
+  }
+  .outputForm {
+    padding: var(--p-none);
+  }
+  .outputPair {
+    margin-top: var(--mv-m);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .resultValue {
+    width: var(--set-w-xs);
+  }
+}

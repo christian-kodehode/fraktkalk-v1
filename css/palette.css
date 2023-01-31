@@ -1,0 +1,12 @@
+:root {
+  /* --- PALETTE --- */
+  --col-black: hsl(0, 0%, 0%);
+  --col-white: hsl(0, 0%, 100%);
+  --col-lgray: hsl(0, 0%, 90%);
+  --col-mgray: hsl(0, 0%, 80%);
+  --col-dgray: hsl(0, 0%, 18%);
+  --col-backg: hsl(52, 90%, 88%);
+  --col-mblue: hsl(240, 46%, 31%);
+  --col-erred: hsl(0, 100%, 50%);
+  --col-mgold: hsl(51, 100%, 50%);
+}
