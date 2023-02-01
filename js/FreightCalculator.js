@@ -83,7 +83,7 @@ function clearOutputHTMLspace() {
 }
 
 /** ---------------------------------------------------------------
- * ----- SEND API REQUEST ---------------------------------------
+ * ----- SEND API REQUEST -----------------------------------------
  * ----- + PUT RESPONSE / ERROR DATA INTO GLOBAL VARIABLES --------
  * ----- + CALL APPLICABLE "PRINT" FUNCTION TO DISPLAY DATA -------
  * --------------------------------------------------------------*/
@@ -112,7 +112,7 @@ function sendAPIrequest() {
 }
 
 /** -----------------------------------------
- * ----- BUILD HTML FOR RESULT DATA ------- 
+ * ----- BUILD HTML FOR RESULT DATA --------- 
  * ----- + DISPLAY HTML & DATA --------------
  ------------------------------------------*/
 
@@ -171,7 +171,7 @@ function printResult() {
 }
 
 /** ----------------------------------------
- * ----- BUILD HTML FOR ERROR DATA ------- 
+ * ----- BUILD HTML FOR ERROR DATA --------- 
  * ----- + DISPLAY HTML & DATA -------------
  -----------------------------------------*/
 

@@ -39,5 +39,7 @@
 
   /* --- PADDING --- */
   --p-none: 0;
-  --p-m: 0.5vmax;
+  --p-s: 0.5vmax;
+  --p-m: 1vmax;
+  --p-l: 1.5vmax;
 }

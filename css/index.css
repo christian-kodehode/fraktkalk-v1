@@ -1,7 +1,7 @@
-/* --------------------------------------------
--------- ASPECT RATIO - ( 1:1 to 8:3 ) --------
------ MOST MOBILE PHONES / TIPPED SCREENS -----
----------------------------------------------*/
+/* ----------------------------------------------
+----- ASPECT RATIO - ( 1:1.33 to 2.33:1 ) -------
+----- MOST MOBILE PHONES / TIPPED SCREENS -------
+-----------------------------------------------*/
 
 * {
   box-sizing: border-box;
@@ -104,7 +104,7 @@ h1 {
 
 .inputForm_input {
   margin-top: var(--mv-xs);
-  padding: var(--p-m);
+  padding: var(--p-s);
   border: var(--border-t) solid var(--col-black);
   border-radius: var(--border-r);
   font-size: var(--fs-m);
@@ -117,7 +117,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   margin-top: var(--mv-l);
-  padding: var(--p-m);
+  padding: var(--p-s) var(--p-m);
   border: var(--border-t) solid var(--col-black);
   border-radius: var(--border-r2);
   font-size: var(--fs-s);
@@ -157,7 +157,7 @@ h1 {
 
 /* --- AFTER CALCULATION --- */
 
-/* ERRORS */
+/* --- ERRORS --- */
 
 .errorHeader {
   font-size: var(--fs-l);
@@ -178,7 +178,7 @@ h1 {
   color: var(--col-erred);
 }
 
-/* RESULTS ACCEPTED */
+/* --- RESULTS ACCEPTED --- */
 
 .outputForm {
   display: flex;
@@ -201,7 +201,7 @@ h1 {
 
 .resultValue {
   margin-top: var(--mv-xs);
-  padding: var(--p-m);
+  padding: var(--p-s);
   border: var(--border-t) solid var(--col-black);
   font-size: var(--fs-m);
   width: clamp(var(--set-w-min), var(--set-w-l), var(--set-w-max));
@@ -210,18 +210,17 @@ h1 {
 
 /* -------------------------
 ------ FOOTER SECTION ------
-----------------------------
 --------------------------*/
 
 #core {
   color: var(--col-erred);
-  padding-left: var(--p-m);
+  padding-left: var(--p-s);
   margin-left: var(--mv-xs);
 }
 
 #trek {
   color: var(--col-mgold);
-  padding-right: var(--p-m);
+  padding-right: var(--p-s);
   margin-right: var(--mv-xs);
 }
 

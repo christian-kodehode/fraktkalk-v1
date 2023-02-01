@@ -1,9 +1,9 @@
-/* --------------------------------------------
--------- ASPECT RATIO - ( 1:1 to 1:2 ) --------
------ MOST MOBILE PHONES / TIPPED SCREENS -----
----------------------------------------------*/
+/* ----------------------------------------------
+-------- ASPECT RATIO - ( 1:1.33 to 1:2 ) -------
+----- MOST MOBILE PHONES / TIPPED SCREENS -------
+-----------------------------------------------*/
 
-@media screen and (max-aspect-ratio: 1/1) {
+@media screen and (max-aspect-ratio: 3/4) {
   :root {
     /* --- SECTION HEIGTHS --- */
     --sec-h-head: 10vh;
@@ -74,7 +74,7 @@
   }
   #inputForm_submit {
     margin-top: var(--mv-xl);
-    padding: var(--mv-xs) var(--mv-s);
+    padding: var(--p-s) var(--p-none);
   }
 
   /* --- RESULTS --- */
